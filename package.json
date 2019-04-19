@@ -1,10 +1,9 @@
 {
-  "name": "FE-Utils",
+  "name": "FEUtils",
   "version": "0.0.1",
   "description": "前端基础工具库",
   "author": "zhangyunling",
   "main": "dist/fe-utils.min.js",
-  "types": "index.d.ts",
   "scripts": {
     "build": "node build/build.js",
     "build-copy": "node build/build-copy.js",

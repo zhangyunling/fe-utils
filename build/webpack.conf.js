@@ -14,10 +14,17 @@ const config = {
         library: `${pkg.name}`,
         libraryTarget: "umd"
     },
+    devServer: {
+        contentBase: "./public", //本地服务器所加载的页面所在的目录
+        historyApiFallback: true, //不跳转
+        inline: true,
+        hot: true
+    },
     module: {
         rules: [{
             test: /\.js$/,
-            loader: "babel-loader"
+            loader: "babel-loader",
+            exclude: /node_modules/
         }]
     }
 }
