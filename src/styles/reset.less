@@ -1,0 +1,99 @@
+@import "./variable.less";
+
+/*
+**页面基础样式设置，类似body, a, margin的初始化设置
+*/
+// div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, a, blockquote, th, textarea, th, td {
+//     margin: 0;
+//     outline: none;
+//     padding: 0;
+// }
+//
+// h1, h2, h3, h4, h5, h6 {
+//     font-size: 14px;
+// }
+//
+// ol, ul, li {
+//     list-style: none outside none;
+// }
+//
+// table {
+//     border-spacing: 0;
+//     border-collapse: collapse;
+// }
+//
+// p, th, td {
+//     word-break: break-all;
+// }
+//
+// fieldset, img {
+//     border: 0 none;
+// }
+//
+// body {
+//     color: @color-text-base;
+//     font: @font-size-base;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-font-smoothing: antialiased;
+//     text-align: left;
+// }
+//
+input::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    img {
+        border: none;
+    }
+}
+//
+// img {
+//     display: inline-block;
+//     max-width: 100%;
+//     vertical-align: middle;
+// }
+//
+textarea {
+    outline: none;
+    resize: none;
+}
+
+input, button {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+::placeholder {
+    color: @color-placeholder;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder { /* IE10–11 */
+    color: @color-placeholder !important;
+    font-weight: 400 !important;
+}
+//
+// ::-webkit-scrollbar {
+//     background: @scrollbars-bg;
+//     border-radius: 0;
+//     height: @scrollbars-size;
+//     position: absolute;
+//     width: @scrollbars-size;
+// }
+//
+// ::-webkit-scrollbar-thumb {
+//     background: @scrollbar-thumb-bg;
+//     border-radius: @scrollbar-thumb-border-radius;
+// }
