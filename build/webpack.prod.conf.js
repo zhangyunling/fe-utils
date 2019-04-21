@@ -2,10 +2,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const packageConfig = require('../package.json');
+const pkg = require('../package.json');
 
 const banner =
     '/*!\n' +
-    ' * FE Utils v' + packageConfig.version + ' (https://github.com/zhangyunling/FE-Utils.git)\n' +
+    ' * FE Utils v' + packageConfig.version + ' (https://github.com/zhangyunling/FEUtils)\n' +
     ' * (c) ' + new Date().getFullYear() + ' zhangyunling \n' +
     ' * Released under the MIT License.\n' +
     ' */';
@@ -13,12 +14,12 @@ const banner =
 const webpackConfig = {
   mode: 'production',
   entry: {
-    'FEUtils': './src/index.js',
+    [pkg.name]: './src/index.js',
   },
   output: {
     path: path.join(__dirname, '..', 'dist'),
-    filename: 'FEUtils.min.js',
-    library: 'FEUtils',
+    filename: `${[pkg.name]}.min.js`,
+    library: `${[pkg.name]}`,
     libraryTarget: 'umd',
   },
   module: {

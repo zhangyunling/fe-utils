@@ -1,10 +1,11 @@
 'use strict'
-const path = require('path')
+const path = require('path');
+const pkg = require('../package.json');
 
 const testWebpackConfig = {
   mode: 'none',
   entry: {
-    'FEUtils': './src/index.js',
+    [pkg.name]: './src/index.js',
   },
   output: {
     path: path.join(__dirname, '..', 'test/asserts'),

@@ -8,8 +8,7 @@
     "start": "npm run dev",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build": "webpack --inline --progress --config build/webpack.prod.conf.js",
-    "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha",
-    "mocha": "mocha"
+    "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha"
   },
   "repository": {
     "type": "git",

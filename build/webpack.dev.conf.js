@@ -1,12 +1,13 @@
 'use strict'
-const path = require('path')
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const pkg = require('../package.json');
 
 const devWebpackConfig = {
   mode: 'development',
   entry: {
-    'FEUtils': './src/index.js',
+    [pkg.name]: './src/index.js',
   },
   output: {
     path: path.join(__dirname, '..', 'test'),
