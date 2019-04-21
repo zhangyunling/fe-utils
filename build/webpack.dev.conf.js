@@ -3,17 +3,11 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
-}
-
-const entry = {
-  'FEUtils': './src/index.js',
-};
-
 const devWebpackConfig = {
   mode: 'development',
-  entry,
+  entry: {
+    'FEUtils': './src/index.js',
+  },
   output: {
     path: path.join(__dirname, '..', 'test'),
     filename: '[name].js',
@@ -32,7 +26,7 @@ const devWebpackConfig = {
     publicPath: '/',
     proxy: {},
     quiet: true,
-    index: 'test/index.html',
+    index: 'test/asserts/index.html',
     watchOptions: {
       poll: false,
     },
@@ -56,8 +50,8 @@ const devWebpackConfig = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      filename: 'test/index.html',
-      template: 'test/index.html',
+      filename: 'test/asserts/index.html',
+      template: 'test/asserts/index.html',
     }),
   ]
 };

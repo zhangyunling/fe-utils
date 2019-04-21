@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "前端基础工具库",
   "author": "zhangyunling",
-  "main": "dist/FE-Utils.min.js",
+  "main": "dist/FEUtils.min.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangyunling/FE-Utils.git"
+    "url": "https://github.com/zhangyunling/FEUtils.git"
   },
   "keywords": [
     "util",

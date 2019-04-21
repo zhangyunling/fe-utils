@@ -17,7 +17,7 @@ const webpackConfig = {
   },
   output: {
     path: path.join(__dirname, '..', 'dist'),
-    filename: 'FE-Utils.min.js',
+    filename: 'FEUtils.min.js',
     library: 'FEUtils',
     libraryTarget: 'umd',
   },
