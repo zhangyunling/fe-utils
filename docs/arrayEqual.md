@@ -1,0 +1,1 @@
+# arrayEqual 文档
