@@ -8,7 +8,8 @@
     "start": "npm run dev",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build": "webpack --inline --progress --config build/webpack.prod.conf.js",
-    "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha"
+    "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha",
+    "init": "eslint src/"
   },
   "repository": {
     "type": "git",
@@ -27,11 +28,14 @@
     "@babel/helper-module-imports": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.2",
     "cross-env": "^5.0.1",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^3.2.0",
     "mocha": "^6.1.4",
