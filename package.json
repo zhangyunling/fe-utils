@@ -11,9 +11,6 @@
     "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha",
     "lint": "eslint src/"
   },
-  "gitHooks": {
-    "pre-commit": "npm run lint"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zhangyunling/FEUtils.git"
