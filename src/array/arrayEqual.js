@@ -8,6 +8,7 @@
  */
 function arrayEqual(arr1, arr2) {
 	var i = 0;
+	
 
   if (arr1 === arr2) {
     return true;
