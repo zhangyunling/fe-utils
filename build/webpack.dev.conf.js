@@ -4,6 +4,8 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const pkg = require('../package.json');
 
+console.log(path.resolve(__dirname, '../tsconfig.json'));
+
 const devWebpackConfig = {
   mode: 'development',
   entry: {
@@ -26,7 +28,6 @@ const devWebpackConfig = {
     overlay: { warnings: false, errors: true },
     publicPath: '/',
     proxy: {},
-    quiet: true,
     index: 'test/asserts/index.html',
     watchOptions: {
       poll: false,
@@ -39,11 +40,22 @@ const devWebpackConfig = {
     minimize: true,
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      loader: "babel-loader",
-      exclude: /node_modules/
-    }]
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "eslint-loader",
+        include: [path.join(__dirname, '..', 'src')],
+        enforce: "pre",
+        options: {
+          emitError: true
+        }
+      },
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/
+      }
+    ]
   },
   plugins: [
     new webpack.DefinePlugin({

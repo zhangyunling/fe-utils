@@ -94,7 +94,7 @@ module.exports = {
     //声明时不能混用声明类型
     "no-mixed-requires": [0, false],
     //禁止混用tab和空格
-    "no-mixed-spaces-and-tabs": [2, false],
+    "no-mixed-spaces-and-tabs": [0, false],
     //换行风格
     "linebreak-style": [0, "windows"],
     //不能用多余的空格
@@ -164,7 +164,7 @@ module.exports = {
     //禁止使用三目运算符
     "no-ternary": 0,
     //一行结束后面不要有空格
-    "no-trailing-spaces": 2,
+    "no-trailing-spaces": 0,
     //在调用super()之前不能使用this或super
     "no-this-before-super": 0,
     //禁止抛出字面量错误 throw "error";
@@ -255,7 +255,7 @@ module.exports = {
     //变量名长度
     "id-length": 0,
     //缩进风格
-    "indent": [2, 2],
+    "indent": [0, 2],
     //声明时必须赋初值
     "init-declarations": 0,
     //对象字面量中冒号的前后空格
@@ -307,7 +307,7 @@ module.exports = {
     //生成器函数必须有yield
     "require-yield": 0,
     //语句强制分号结尾
-    "semi": [2, "always"],
+    "semi": [0, "always"],
     //分号前后空格
     "semi-spacing": [0, {"before": false, "after": true}],
     //变量声明时排序
@@ -329,7 +329,7 @@ module.exports = {
     //注释风格要不要有空格什么的
     "spaced-comment": 0,
     //使用严格模式
-    "strict": 2,
+    "strict": 0,
     //禁止比较时使用NaN，只能用isNaN()
     "use-isnan": 2,
     //jsdoc规则

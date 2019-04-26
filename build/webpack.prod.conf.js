@@ -23,11 +23,22 @@ const webpackConfig = {
     libraryTarget: 'umd',
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      loader: "babel-loader",
-      exclude: /node_modules/
-    }]
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "eslint-loader",
+        include: [path.join(__dirname, '..', 'src')],
+        enforce: "pre",
+        options: {
+          emitError: true
+        }
+      },
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/
+      }
+    ]
   },
   plugins: [
     new webpack.BannerPlugin({banner: banner, raw: true, entryOnly: true})

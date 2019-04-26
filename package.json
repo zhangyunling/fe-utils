@@ -6,10 +6,13 @@
   "main": "dist/FEUtils.min.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "build": "webpack --inline --progress --config build/webpack.prod.conf.js",
     "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha",
-    "init": "eslint src/"
+    "lint": "eslint src/"
+  },
+  "gitHooks": {
+    "pre-commit": "npm run lint"
   },
   "repository": {
     "type": "git",
