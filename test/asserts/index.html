@@ -11,6 +11,7 @@
     .tl{text-align: left;}
     ul,ol,li{list-style: none;padding: 0;}
     #list{padding-left: 32px;}
+    #list>li{display: inline-block;width: 170px;line-height: 2;}
     #mocha{display: none;}
     #mocha-report a{pointer-events: none;}
     #mocha-report{line-height: 2;}
@@ -76,9 +77,9 @@
         var html = "";
         var hash = location.hash.replace("#","");
 
-        for(i in FEUtils){
-          html += '<li><a href = "#'+i+'">'+i+'</a></li>';
-        }
+        Object.keys(FEUtils).sort().forEach(function(name){
+          html += '<li><a href = "#'+name+'">'+name+'</a></li>';
+        });
 
         this.list.innerHTML = html;
 
