@@ -7,7 +7,7 @@
  * @example FEUtils.isNumber(value);
  */
 
-let checkType = require('./_type');
+let checkType = require('../_utils/_type');
 
 function isNumber(value){
 	return checkType(value) === 'number';

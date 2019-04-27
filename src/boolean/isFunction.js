@@ -7,7 +7,7 @@
  * @example FEUtils.isFunction(value);
  */
 
-let checkType = require('./_type');
+let checkType = require('../_utils/_type');
 
 function isFunction(value){
 	return checkType(value) === 'function';

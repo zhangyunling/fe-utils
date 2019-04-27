@@ -6,13 +6,13 @@
  * @param {Boolean} immediate 节流模式，默认为false（倒计时的最后）
  */
 
-let isFunction = require('../type/isFunction');
-let isNumber = require('../type/isNumber');
-let isBoolean = require('../type/isBoolean');
+let isFunction = require('../boolean/isFunction');
+let isNumber = require('../boolean/isNumber');
+let isBoolean = require('../boolean/isBoolean');
 
 let throttle = function(callback, wait, immediate){
-  let _timer; // 
-  let _context; // 
+  let _timer; // 计时器
+  let _context; // 内部this指向
   let _args; // 变量
   let _wait = isNumber(wait)? (wait || 100) : 100; // 节流时间间隔，
   // 是否立即执行，默认值为false

@@ -6,8 +6,8 @@
  * @param {Number} maxWait 最大防抖间隔，maxWait的时间内，必定会执行一次，默认为0，不限制；
  */
 
-let isFunction = require('../type/isFunction');
-let isNumber = require('../type/isNumber');
+let isFunction = require('../boolean/isFunction');
+let isNumber = require('../boolean/isNumber');
 
 let debounce = function(callback, wait, maxWait){
   let _timer; // 计时器

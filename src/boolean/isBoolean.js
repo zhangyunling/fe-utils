@@ -7,7 +7,7 @@
  * @example FEUtils.isBoolean(value);
  */
 
-let checkType = require('./_type');
+let checkType = require('../_utils/_type');
 
 function isBoolean(value){
 	return checkType(value) === 'boolean';
