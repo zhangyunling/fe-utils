@@ -47,7 +47,7 @@
         var hash = location.hash.replace("#","");
 
         if(hash){
-          app.showOne(hash);
+          location.reload();
         } else {
           app.showList();
         }
@@ -56,6 +56,7 @@
         this.title.style.display = 'none';
         this.mocha.style.display = 'block';
         this.list.style.display = 'none';
+        this.mocha.innerHTML = '';
 
         this.removeScript();
         this.addScript(id);
@@ -71,12 +72,17 @@
       init: function(){
         var i;
         var html = "";
+        var hash = location.hash.replace("#","");
 
         for(i in FEUtils){
           html += '<li><a href = "#'+i+'">'+i+'</a></li>';
         }
 
         this.list.innerHTML = html;
+
+        if(hash){
+          app.showOne(hash);
+        }
       },
       removeScript: function(){
         if(!this.script){
@@ -107,6 +113,7 @@
 
     window.onhashchange = app.hashChange;
     app.init();
-    app.hashChange();
+    // if
+    // app.hashChange();
   </script>
 </html>

@@ -56,7 +56,7 @@ module.exports = {
     //禁止不必要的bool转换
     "no-extra-boolean-cast": 2,
     //禁止非必要的括号
-    "no-extra-parens": 2,
+    "no-extra-parens": 0,
     //禁止多余的冒号
     "no-extra-semi": 2,
     //禁止switch穿透
@@ -228,7 +228,7 @@ module.exports = {
     //return 后面是否允许省略
     "consistent-return": 0,
     //this别名
-    "consistent-this": [2, "that"],
+    "consistent-this": [0, "that"],
     //非派生类不能调用super，派生类必须调用super
     "constructor-super": 0,
     //必须使用 if(){} 中的{}
@@ -283,7 +283,7 @@ module.exports = {
     //强制对象字面量缩写语法
     "object-shorthand": 0,
     //连续声明
-    "one-var": 1,
+    "one-var": 0,
     //赋值运算符 += -=什么的
     "operator-assignment": [0, "always"],
     //换行时运算符在行尾还是行首
