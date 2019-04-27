@@ -2,7 +2,7 @@
 var FEUtils = require('./asserts/FEUtils.js');
 var {assert , expect} = require('chai');
 
-describe('isBoolean 的测试用例', function() {
+describe('FEUtils.isBoolean 的测试用例', function() {
   it(`FEUtils.isBoolean(true) should return true`, function () {
     assert(FEUtils.isBoolean(true))
   });

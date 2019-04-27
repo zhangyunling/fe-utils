@@ -2,7 +2,7 @@
 var FEUtils = require('./asserts/FEUtils.js');
 var {assert , expect} = require('chai');
 
-describe('isNumber 的测试用例', function() {
+describe('FEUtils.isNumber 的测试用例', function() {
   it(`FEUtils.isNumber(1) should return true`, function () {
     assert(FEUtils.isNumber(1))
   });

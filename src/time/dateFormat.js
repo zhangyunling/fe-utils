@@ -1,5 +1,5 @@
 /**
- * @method isBoolean
+ * @method dateFormat
  * @since version 1.0
  * @desc 转换为指定格式的时间
  * @props {String} format 转换成的目标格式，默认值为:"yyyy/mm/dd hh:ii"
