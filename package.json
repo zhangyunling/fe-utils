@@ -60,5 +60,10 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "config": {
+    "ghooks": {
+      "commit-msg": "./config/validate-commit-msg.js"
+    }
+  }
 }
