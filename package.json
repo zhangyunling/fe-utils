@@ -11,14 +11,17 @@
     "test": "webpack --inline --progress --config build/webpack.test.conf.js && mocha",
     "lint": "eslint src/"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zhangyunling/FEUtils.git"
   },
   "keywords": [
-    "util",
+    "utils",
     "tool",
-    "fe-util",
+    "fe-utils",
     "common Utils"
   ],
   "license": "MIT",
@@ -42,6 +45,7 @@
     "node-notifier": "^5.1.2",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
+    "pre-commit": "^1.2.2",
     "rimraf": "^2.6.0",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "webpack": "^4.30.0",
