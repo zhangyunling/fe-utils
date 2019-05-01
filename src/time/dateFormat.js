@@ -15,13 +15,14 @@
  */
 
 let _dateUtils = require('../_utils/_date');
+let _numberUtils = require('../_utils/_number');
+
 // 把传入的值，尝试转换为日期对象；
 let _toDate = _dateUtils.toDate;
-
 // 把小于10的数字，前面补零；
-let _tf = function(num){
-	return (num < 10 ? '0' : '') + num;
-}
+let _tf = _numberUtils.numberPatchZero;
+
+// 正则替换
 let _proxy = {
   'yyyy': function(date){
   	return date.getFullYear();
@@ -59,4 +60,5 @@ function dateFormat(options){
   	return _proxy[key](date);
   });
 }
+
 module.exports = dateFormat;

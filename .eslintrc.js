@@ -98,7 +98,7 @@ module.exports = {
     //换行风格
     "linebreak-style": [0, "windows"],
     //不能用多余的空格
-    "no-multi-spaces": 1,
+    "no-multi-spaces": 0,
     //字符串不能用\换行
     "no-multi-str": 2,
     //空行最多不能超过2行
@@ -299,7 +299,7 @@ module.exports = {
     //引号类型 `` "" ''
     "quotes": [1, "single"],
     //对象字面量中的属性名是否强制双引号
-    "quote-props":[2, "always"],
+    "quote-props":[0, "always"],
     //parseInt必须指定第二个参数
     "radix": 2,
     //命名检测
