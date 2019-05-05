@@ -6,7 +6,8 @@ let typeList = [
   'Array', 
   'RegExp', 
   'Object', 
-  'Error'
+  'Error',
+  'Date'
 ];
 let class2type = {};
 let _toString = class2type.toString;
