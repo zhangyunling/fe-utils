@@ -25,7 +25,6 @@ describe('FEUtils.dateNature 的测试用例', function() {
 
   it(`FEUtils.dateNature('2019/05/12') should be '母亲节'`, function () {
     let _date = FEUtils.dateNature('2019/05/12');
-    console.log(_date);
     assert.equal(_date.festival.week, '母亲节');
   });
 
@@ -50,4 +49,9 @@ describe('FEUtils.dateNature 的测试用例', function() {
   });
 
   // 2019年04月21日 复活节
+  it(`FEUtils.dateNature('2019/04/21') should be '复活节'`, function () {
+    let _date = FEUtils.dateNature('2019/04/21');
+    assert.equal(_date.festival.estDay, '复活节');
+  });
+  
 });

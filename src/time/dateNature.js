@@ -345,10 +345,10 @@ const _utils = {
     //复活节对应的时间对象
     let dayEaster = null;
 
-    if (lDayTerm2.lDay - 15 < 0) {
-      lMlen = 15 - lDayTerm2.lDay;
+    if (lDayTerm2.day - 15 < 0) {
+      lMlen = 15 - lDayTerm2.day;
     } else {
-      lMlen = (lDayTerm2.isLeap ? _utils.leapDays(y) : _utils.monthDays(y,lDayTerm2.lMonth)) - lDayTerm2.lDay + 15;
+      lMlen = (lDayTerm2.isLeap ? _utils.leapDays(y) : _utils.monthDays(y,lDayTerm2.month)) - lDayTerm2.day + 15;
     }
 
     //一天等于 1000*60*60*24 = 86400000 毫秒
@@ -470,19 +470,18 @@ const _utils = {
   addEstDay: function(dateObj) {
     let solar = dateObj.solar;
     let y = solar.year;
-    let m = solar.month;
+    let m = solar.month - 1;
     let d = solar.day;
     let estDay = null;
 
     if (m !== 2 && m !== 3) {
-      return '';
+      return;
     }
 
     //复活节只出现在3或4月
     estDay = _utils.easter(y);
 
     if (m === estDay.m && d === estDay.d) {
-      dateObj.festival.solar = '复活节';
       dateObj.festival.estDay = '复活节';
     }
   },
