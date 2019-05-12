@@ -1,6 +1,6 @@
 /**
  * @method rgbToHex
- * @since version 1.0
+ * @since version 1.0.0
  * @desc 根据rgb格式的值，生成hex格式的颜色值，支持rgba -> hex8
  * @param 
  * @return {String} 返回生成的hex或者hex8格式的颜色值

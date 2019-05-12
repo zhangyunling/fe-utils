@@ -1,5 +1,6 @@
 /**
  * @method debounce
+ * @since version 1.0.0
  * @desc 函数防抖，只触发最后一次调用；
  * @param {Function} callback 防抖后的回调函数；
  * @param {Number} wait 防抖的限制时间，单位毫秒（ms），默认100；

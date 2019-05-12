@@ -4,8 +4,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const pkg = require('../package.json');
 
-console.log(path.resolve(__dirname, '../tsconfig.json'));
-
 const devWebpackConfig = {
   mode: 'development',
   entry: {

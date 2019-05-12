@@ -1,6 +1,6 @@
 /**
  * @method numberFormat
- * @since version 1.0
+ * @since version 1.0.0
  * @desc 把数字字符串进行分割，支持字符串类型的数字
  * @props {String/Number} number 待转换的数字，必须是整数，不能是浮点型
  * @props {Number} length 每一个小单元的长度，默认值为 3

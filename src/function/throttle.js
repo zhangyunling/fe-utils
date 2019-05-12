@@ -1,5 +1,6 @@
 /**
  * @method throttle
+ * @since version 1.0.0
  * @desc 函数节流，一定时间内，只执行一次回调函数
  * @param {Function} callback 节流后的回调函数；
  * @param {Number} wait 节流的限制时间，单位毫秒（ms），默认100；

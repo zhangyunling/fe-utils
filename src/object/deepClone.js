@@ -1,6 +1,6 @@
 /**
  * @method deepClone
- * @since version 1.0
+ * @since version 1.0.0
  * @desc 深copy，如果不是对象，则直接返回
  * @param {Any} values 待copy的数据
  * @return {Any} copy之后的值

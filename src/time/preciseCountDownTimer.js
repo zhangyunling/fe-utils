@@ -1,6 +1,6 @@
 /**
  * @method preciseCountDownTimer
- * @since version 1.0
+ * @since version 1.0.0
  * @desc 倒计时的插件
  * @param {Number} options.distTime 倒计时截止时间，有效的时间（时间戳，时间字符串，Date实例）
  * @param {Number} options.curTime 当前时间，其实也是服务器时间（时间戳，时间字符串，Date实例）

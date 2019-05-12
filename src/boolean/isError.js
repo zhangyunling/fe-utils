@@ -1,6 +1,6 @@
 /**
  * @method isError
- * @since version 1.0
+ * @since version 1.0.0
  * @desc 判断是否为Error对象
  * @param {Error} value 待检测的值
  * @return {Boolean} Boolean 值；

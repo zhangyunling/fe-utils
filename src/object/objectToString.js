@@ -1,6 +1,6 @@
 /**
  * @method objectToString
- * @since version 1.0
+ * @since version 1.0.0
  * @desc 把规定格式的Object转换为String格式
  * @params {Object} obj 待转换的对象
  * @params {String} sep 字符串分隔符，默认为："&"
