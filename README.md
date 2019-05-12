@@ -17,7 +17,7 @@
 
 ### npm:
 ``` bash
-$ npm i fdutils -D
+$ npm i fdutils -d
 ```
 
 ## 支持的API
