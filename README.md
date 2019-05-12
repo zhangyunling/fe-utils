@@ -20,7 +20,7 @@
 $ npm i FEUtils -D
 ```
 
-### 支持的API
+## 支持的API
 
 
 - `isArray`: (v:`1.0.0`) 判断是否为数组类型

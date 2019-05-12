@@ -25,7 +25,7 @@ ${pkg.description}（最新版本：${pkg.version}）
 $ npm i FEUtils -D
 \`\`\`
 
-### 支持的API
+## 支持的API
 
 
 `;
