@@ -14,15 +14,15 @@ ${pkg.description}（最新版本：${pkg.version}）
 
 1. 直接引入；
 
-直接下载：[feutils.min.js](https://github.com/zhangyunling/feutils/blob/master/dist/feutils.min.js)
+直接下载：[fdutils.min.js](https://github.com/zhangyunling/fdutils/blob/master/dist/fdutils.min.js)
 
-直接使用\`script\`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：\`feutils\`）；
+直接使用\`script\`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：\`fdutils\`）；
 
 2. npm 包
 
 ### npm:
 \`\`\` bash
-$ npm i feutils -D
+$ npm i fdutils -D
 \`\`\`
 
 ## 支持的API

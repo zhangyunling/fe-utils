@@ -7,7 +7,7 @@
  * @props {String} sep 分隔符，默认值为“,”
  * @return {String} 使用分隔符，分割好的数字字符串；
  *
- * @example feutils.numberFormat({
+ * @example fdutils.numberFormat({
  *      number : 1234567,
  *      length : 3,
  *      sep : '-',

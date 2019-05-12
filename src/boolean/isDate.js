@@ -4,7 +4,7 @@
  * @desc 判断是否为Date类型
  * @param {Object} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example feutils.isDate(value);
+ * @example fdutils.isDate(value);
  */
 
 let checkType = require('../_utils/_type');

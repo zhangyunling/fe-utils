@@ -4,7 +4,7 @@
  * @desc 判断是否为数字类型
  * @param {Number} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example feutils.isNumber(value);
+ * @example fdutils.isNumber(value);
  */
 
 let checkType = require('../_utils/_type');

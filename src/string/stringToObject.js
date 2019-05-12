@@ -6,7 +6,7 @@
  * @params {String} sep 字符串分隔符，默认为："&"
  * @return {Object} 返回编码转换的字符串
  *
- * @example feutils.stringToObject('a=1&b=2');
+ * @example fdutils.stringToObject('a=1&b=2');
  * @return {a: 1, b: 2}
  *
  */
@@ -37,7 +37,7 @@ function _stringToObject(str, sep){
 
 		// 如果格式不对，则抛弃这部分；
 		if (_arr.length > 2 || !_key) {
-			throw new Error('解析feutils.stringToObject时，传入的参数有误，请确认', str);
+			throw new Error('解析fdutils.stringToObject时，传入的参数有误，请确认', str);
 		}
 
 		// 如果对应的值为undefined，那么依然设置为undefined

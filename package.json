@@ -1,9 +1,9 @@
 {
-  "name": "feutils",
+  "name": "fdutils",
   "version": "1.0.0",
   "description": "前端基础工具库",
   "author": "zhangyunling",
-  "main": "dist/feutils.min.js",
+  "main": "dist/fdutils.min.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangyunling/feutils.git"
+    "url": "https://github.com/zhangyunling/fdutils.git"
   },
   "keywords": [
     "utils",
-    "feutils"
+    "fdutils"
   ],
   "license": "MIT",
   "dependencies": {},

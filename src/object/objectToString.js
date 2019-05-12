@@ -6,7 +6,7 @@
  * @params {String} sep 字符串分隔符，默认为："&"
  * @return {Object} 返回对象转换后的字符串；
  *
- * @example feutils.objectToString({a: 1, b: 2});
+ * @example fdutils.objectToString({a: 1, b: 2});
  * @return 'a=1&b=2'
  *
  */
@@ -20,13 +20,13 @@ function _objectToString(obj, sep){
 
 	// 是否为对象，如果不是对象，那么直接抛错
 	if (!_obj && !isObject(_obj)) {
-		throw new Error('解析feutils.objectToString时，传入的参数非对象格式，请确认', _obj);
+		throw new Error('解析fdutils.objectToString时，传入的参数非对象格式，请确认', _obj);
 	}
 
 	// 循环拆分
 	for (let [key, value] of Object.entries(_obj)){
 		if (value instanceof Object){
-			throw new Error('解析feutils.objectToString时，传入的参数不支持多层对象嵌套，请确认', value);
+			throw new Error('解析fdutils.objectToString时，传入的参数不支持多层对象嵌套，请确认', value);
 		}
 
 		_arr.push(`${key}=${encodeURIComponent(String(value))}`);

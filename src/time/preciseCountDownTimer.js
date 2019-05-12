@@ -7,7 +7,7 @@
  * @param {Function} options.callback 倒计时之后的回调函数（必须）
  * @return Object ;
  *
- * @example feutils.preciseCountDownTimer({
+ * @example fdutils.preciseCountDownTimer({
  *		distTime : "13131",
  * 		curTime : 3,
  *      callback : Function(data)
