@@ -9,15 +9,15 @@
 
 1. 直接引入；
 
-直接下载：[FEUtils.min.js](https://github.com/zhangyunling/FEUtils/blob/master/dist/FEUtils.min.js)
+直接下载：[feutils.min.js](https://github.com/zhangyunling/feutils/blob/master/dist/feutils.min.js)
 
-直接使用`script`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：`FEUtils`）；
+直接使用`script`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：`feutils`）；
 
 2. npm 包
 
 ### npm:
 ``` bash
-$ npm i FEUtils -D
+$ npm i feutils -D
 ```
 
 ## 支持的API

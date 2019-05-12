@@ -6,7 +6,7 @@
  * @props {Number/String/Date} date   输入的时间戳，或者待转换的时间，不传该属性是，取当前的时间戳
  * @return {String} 返回转换好的指定的日期时间的字符串
  *
- * @example FEUtils.dateFormat({
+ * @example feutils.dateFormat({
  *		format : "yyyy-mm-dd hh时ii分ss秒",
  * 		date : "2019/04/27 16:24:12"
  * });

@@ -4,7 +4,7 @@
  * @desc 判断是否为对象类型
  * @param {Object} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example FEUtils.isObject(value);
+ * @example feutils.isObject(value);
  */
 
 let checkType = require('../_utils/_type');

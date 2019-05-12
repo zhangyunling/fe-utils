@@ -4,7 +4,7 @@
  * @desc 判断是否为Error对象
  * @param {Error} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example FEUtils.isError(value);
+ * @example feutils.isError(value);
  */
 
 let checkType = require('../_utils/_type');

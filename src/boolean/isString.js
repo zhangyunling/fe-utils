@@ -4,7 +4,7 @@
  * @desc 判断是否为字符串类型
  * @param {String} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example FEUtils.isString(value);
+ * @example feutils.isString(value);
  */
 
 let checkType = require('../_utils/_type');

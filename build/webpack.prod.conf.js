@@ -1,12 +1,11 @@
 'use strict';
 const path = require('path');
 const webpack = require('webpack');
-const packageConfig = require('../package.json');
 const pkg = require('../package.json');
 
 const banner =
     '/*!\n' +
-    ' * FE Utils v' + packageConfig.version + ' (https://github.com/zhangyunling/FEUtils)\n' +
+    ' * FE Utils v' + pkg.version + ' (https://github.com/zhangyunling/'+pkg.name+')\n' +
     ' * (c) ' + new Date().getFullYear() + ' zhangyunling \n' +
     ' * Released under the MIT License.\n' +
     ' */';

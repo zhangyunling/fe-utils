@@ -4,7 +4,7 @@
  * @desc 判断是否为布尔值类型
  * @param {Boolean} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example FEUtils.isBoolean(value);
+ * @example feutils.isBoolean(value);
  */
 
 let checkType = require('../_utils/_type');

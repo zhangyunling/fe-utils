@@ -4,7 +4,7 @@
  * @desc 生成一个随机的颜色
  * @return {String} 一个随机的HEX格式的颜色
  *
- * @example FEUtils.colorRandom();
+ * @example feutils.colorRandom();
  * @result {String} '#000000'
  *
  */

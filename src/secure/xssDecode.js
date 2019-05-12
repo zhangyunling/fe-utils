@@ -5,7 +5,7 @@
  * @params {String} str 待转换的字符串
  * @return {String} 返回编码转换的字符串
  *
- * @example FEUtils.xssEncode(string);
+ * @example feutils.xssEncode(string);
  *
  */
 

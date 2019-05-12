@@ -5,7 +5,7 @@
  * @param 
  * @return {String} 返回生成的rgb或者rgba格式的值
  *
- * @example FEUtils.hexToRgb('#000000');
+ * @example feutils.hexToRgb('#000000');
  * @result {String} 'rgb(0,0,0)'
  *
  */
@@ -16,7 +16,7 @@ function _hexToRgb(hex) {
 
 	// 以 # 号开头
 	if (_hex.indexOf('#') !== 0){
-		throw new TypeError('FEUtils.hexToRgb传入的参数格式不正确，请检查');
+		throw new TypeError('feutils.hexToRgb传入的参数格式不正确，请检查');
 	}
 
 	// 移除 # 号
@@ -32,7 +32,7 @@ function _hexToRgb(hex) {
 
   // 如果长度或者字符格式不对，则抛出错误
   if (_len !== 6 && _len !== 8 && /^[0-9a-fA-F]+$/.test(_hex)) {
-  	throw new TypeError('FEUtils.hexToRgb传入的参数格式不正确，请检查');
+  	throw new TypeError('feutils.hexToRgb传入的参数格式不正确，请检查');
   }
 
   let r = parseInt('0x' + _hex.slice(0, 2), 16);

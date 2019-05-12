@@ -5,7 +5,7 @@
  * @param 
  * @return {String} 返回生成的hex或者hex8格式的颜色值
  *
- * @example FEUtils.rgbToHex('rgb(0,0,0)');
+ * @example feutils.rgbToHex('rgb(0,0,0)');
  * @result {String} '#000000'
  *
  */
@@ -24,7 +24,7 @@ function _rgbToHex(rgb) {
 
 	// 如果找不到_lIndex，_rIndex，或者这两个的位置不正确，则表示错误
 	if (_lIndex === -1 || _rIndex === -1 || _lIndex >= _rIndex){
-		throw new TypeError('FEUtils.rgbToHex传入的参数格式不正确，请检查');
+		throw new TypeError('feutils.rgbToHex传入的参数格式不正确，请检查');
 	}
 
 	// 截断字符串，剩余1,1,1,1的格式；
@@ -35,7 +35,7 @@ function _rgbToHex(rgb) {
 
 	// 判断格式是否正确
 	if ((_len !== 3 && _len !== 4) || !(/[\d,]+/g).test(_rgb)){
-		throw new TypeError('FEUtils.rgbToHex传入的参数格式不正确，请检查');
+		throw new TypeError('feutils.rgbToHex传入的参数格式不正确，请检查');
 	}
 
 	let _r = xToOX(Number(_rgbArr[0] || ''));

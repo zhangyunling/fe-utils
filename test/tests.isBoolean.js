@@ -1,15 +1,15 @@
-// FEUtils必须使用var定义，不然浏览器端和Node端不能同时处理
-var FEUtils = require('./asserts/FEUtils.js');
+// feutils必须使用var定义，不然浏览器端和Node端不能同时处理
+var feutils = require('./asserts/feutils.js');
 var {assert , expect} = require('chai');
 
-describe('FEUtils.isBoolean 的测试用例', function() {
-  it(`FEUtils.isBoolean(true) should return true`, function () {
-    assert(FEUtils.isBoolean(true))
+describe('feutils.isBoolean 的测试用例', function() {
+  it(`feutils.isBoolean(true) should return true`, function () {
+    assert(feutils.isBoolean(true))
   });
-  it(`FEUtils.isBoolean(null) should return false`, function () {
-    assert.notEqual(FEUtils.isBoolean(null), true);
+  it(`feutils.isBoolean(null) should return false`, function () {
+    assert.notEqual(feutils.isBoolean(null), true);
   });
-  it(`FEUtils.isBoolean(1) should return false`, function () {
-    assert.notEqual(FEUtils.isBoolean(1), true);
+  it(`feutils.isBoolean(1) should return false`, function () {
+    assert.notEqual(feutils.isBoolean(1), true);
   });
 });

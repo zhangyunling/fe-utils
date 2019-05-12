@@ -1,9 +1,9 @@
 {
-  "name": "FEUtils",
+  "name": "feutils",
   "version": "1.0.0",
   "description": "前端基础工具库",
   "author": "zhangyunling",
-  "main": "dist/FEUtils.min.js",
+  "main": "dist/feutils.min.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangyunling/FEUtils.git"
+    "url": "https://github.com/zhangyunling/feutils.git"
   },
   "keywords": [
     "utils",
-    "FEUtils"
+    "feutils"
   ],
   "license": "MIT",
   "dependencies": {},

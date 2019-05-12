@@ -4,7 +4,7 @@
  * @desc 判断是否为正则类型
  * @param {RegExp} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example FEUtils.isRegExp(value);
+ * @example feutils.isRegExp(value);
  */
 
 let checkType = require('../_utils/_type');

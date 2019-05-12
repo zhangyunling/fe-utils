@@ -5,7 +5,7 @@
  * @param {Any} values 待copy的数据
  * @return {Any} copy之后的值
  *
- * @example FEUtils.deepClone({
+ * @example feutils.deepClone({
  *      number : 1234567,
  * });
  * @result {Object} {

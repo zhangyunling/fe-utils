@@ -6,7 +6,7 @@
  * @props {Number/String/Date} date   输入的时间戳，或者待转换的时间，不传该属性是，取当前的时间戳
  * @return {String} 返回转换好的指定的日期时间的字符串
  *
- * @example FEUtils.dateNature("2019/04/27");
+ * @example feutils.dateNature("2019/04/27");
  * 
  * @result {Object} "当前天的农历，阳历，节日，节气等信息"
  *  {
@@ -541,7 +541,7 @@ function _dateNature(date) {
 
   // 如果返回的不是一个日期对象，则直接抛出异常
   if (!_isDate(_date)) {
-    throw new TypeError('在调用FEUtils.dateNature时，传入的参数不是一个合法的Date实例！', date);
+    throw new TypeError('在调用feutils.dateNature时，传入的参数不是一个合法的Date实例！', date);
   }
 
   //获取农历的日期，并返回一个对象
@@ -571,7 +571,7 @@ function _dateNature(date) {
 // 简介信息；
 _dateNature.info = {
   input: function(){
-    return 'FEUtils.dateNature("2019/04/27")';
+    return 'feutils.dateNature("2019/04/27")';
   },
   output: function(){
     return {

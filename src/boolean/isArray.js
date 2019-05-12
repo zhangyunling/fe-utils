@@ -4,7 +4,7 @@
  * @desc 判断是否为数组类型
  * @param {Array} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example FEUtils.isArray(value);
+ * @example feutils.isArray(value);
  */
 
 let checkType = require('../_utils/_type');
