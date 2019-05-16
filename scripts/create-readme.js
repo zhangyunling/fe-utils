@@ -15,6 +15,7 @@ ${pkg.description}（最新版本：${pkg.version}）
 1. 直接引入；
 
 直接下载：[fdutils.min.js](https://github.com/zhangyunling/fdutils/blob/master/dist/fdutils.min.js)
+
 单元测试：[fdutils](http://www.zhangyunling.com/study/fdutils/)
 
 直接使用\`script\`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：\`fdutils\`）；
@@ -86,11 +87,10 @@ function _create(){
 		try{
 			stat = fs.statSync( path.resolve(_docRoot, docName) );
 		} catch (e){}
-		console.log(stat);
 
 		// 根据是否有文档，生成不同的跳转链接
 		if (stat){
-			_apiArr.push(`- \`[${info.method}](./docs/${docName})\`: (v:\`${info.version}\`) ${info.desc}`);
+			_apiArr.push('- ['+info.method+'](./docs/'+docName+'): (v:\`'+info.version+'\`) '+ info.desc);
 		} else {
 			_apiArr.push(`- \`${info.method}\`: (v:\`${info.version}\`) ${info.desc}`);
 		}
