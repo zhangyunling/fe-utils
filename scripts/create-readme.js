@@ -15,6 +15,7 @@ ${pkg.description}（最新版本：${pkg.version}）
 1. 直接引入；
 
 直接下载：[fdutils.min.js](https://github.com/zhangyunling/fdutils/blob/master/dist/fdutils.min.js)
+单元测试：[fdutils](http://www.zhangyunling.com/study/fdutils/)
 
 直接使用\`script\`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：\`fdutils\`）；
 
@@ -32,6 +33,7 @@ $ npm i fdutils -D
 
 function _create(){
 	let _root = path.resolve(__dirname, '../src/');
+	let _docRoot = path.resolve(__dirname, '../docs/');
 	let _apiArr = [];
 	let _now = Date.now();
 
@@ -52,14 +54,16 @@ function _create(){
 	    if (stat && stat.isDirectory()) {
 	      _walk( _dir );
 	    } else {
-	     	_createApiArr(_dir); 
+	     	_createApiArr(_dir, file); 
 	    }
 	  });
 	}
 
-	function _createApiArr(_dir){
+	function _createApiArr(_dir, file){
 		let content = fs.readFileSync(_dir, 'utf-8');
 		let info = {};
+		let docName = file.replace('js', 'md');
+		let stat = null;
 
 		// 获取method名称
 		content.replace(/\@method\s+([^\n\t]+)/, function(p1, p2){
@@ -79,7 +83,17 @@ function _create(){
 			return;
 		}
 
-		_apiArr.push(`- \`${info.method}\`: (v:\`${info.version}\`) ${info.desc}`);
+		try{
+			stat = fs.statSync( path.resolve(_docRoot, docName) );
+		} catch (e){}
+		console.log(stat);
+
+		// 根据是否有文档，生成不同的跳转链接
+		if (stat){
+			_apiArr.push(`- \`[${info.method}](./docs/${docName})\`: (v:\`${info.version}\`) ${info.desc}`);
+		} else {
+			_apiArr.push(`- \`${info.method}\`: (v:\`${info.version}\`) ${info.desc}`);
+		}
 	}
 
   _walk(_root);

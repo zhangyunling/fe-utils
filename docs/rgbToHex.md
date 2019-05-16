@@ -10,24 +10,21 @@ fdutils.rgbToHex(rgbColor);
 
 验证字符串的规则为：
 
-1. 必须以 # 开头
-2. 字符串只能保护： 0-9 a-f, A-F的字符串
-3. 长度为 3(hex),4(hex8), 6(hex), 8(hex8)；
+1. 必须以rgb或者rgba开头的，格式为：rgba(xx, xx, xx, xx)的字符串
+2. 括号内的元素，长度为3，或者4
+3. 每个xx都必须是一个数字，并且取值范围是 [0, 255]
 
 demo示例：
 
 ```
-fdutils.hexToRgb('#000');
-// rgb(0,0,0)
+fdutils.rgbToHex('rgb(0,0,0)');
+// #000000
 
-fdutils.hexToRgb('#0000');
-// hex8格式 -> rgba(0,0,0,0)
+fdutils.rgbToHex('rgba(0,0,0,0)');
+// #00000000 (hex8格式)
 
-fdutils.hexToRgb('#000000');
-// rgb(0,0,0)
-
-fdutils.hexToRgb('#00000000');
-// hex8格式 -> rgba(0,0,0,0)
+fdutils.rgbToHex('rg(0,0,0,0)');
+// rg开头，格式错误，throw Error
 
 ```
 
