@@ -38,9 +38,9 @@ $ npm i fdutils -D
 - [colorRandom](./docs/colorRandom.md): (v:`1.0.0`) 生成一个随机的颜色
 - [hexToRgb](./docs/hexToRgb.md): (v:`1.0.0`) 根据hex的值，生成rgb格式的值，支持hex8 -> rgba
 - [rgbToHex](./docs/rgbToHex.md): (v:`1.0.0`) 根据rgb格式的值，生成hex格式的颜色值，支持rgba -> hex8
-- `debounce`: (v:`1.0.0`) 函数防抖，只触发最后一次调用；
-- `throttle`: (v:`1.0.0`) 函数节流，一定时间内，只执行一次回调函数
-- `numberFormat`: (v:`1.0.0`) 把数字字符串进行分割，支持字符串类型的数字
+- [debounce](./docs/debounce.md): (v:`1.0.0`) 函数防抖，只触发最后一次调用；
+- [throttle](./docs/throttle.md): (v:`1.0.0`) 函数节流，一定时间内，只执行一次回调函数
+- [numberFormat](./docs/numberFormat.md): (v:`1.0.0`) 把数字字符串进行分割，支持字符串类型的数字
 - `deepClone`: (v:`1.0.0`) 深copy，如果不是对象，则直接返回
 - `objectToString`: (v:`1.0.0`) 把规定格式的Object转换为String格式
 - `xssDecode`: (v:`1.0.0`) 进行XSS编码
