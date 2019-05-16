@@ -10,7 +10,20 @@ describe('fdutils.rgbToHex 的测试用例', function() {
   	assert.equal(fdutils.rgbToHex('rgba(0,0,0,1)'), '#000000ff');
   });
   it(`fdutils.rgbToHex('rgb(195,110,110,0.59)') should return '#c36e6e96'`, function () {
-  	console.log(fdutils.rgbToHex('rgb(195,110,110,0.59)'));
   	assert.equal(fdutils.rgbToHex('rgb(195,110,110,0.59)'), '#c36e6e96');
+  });
+  it(`fdutils.rgbToHex('rgb(256,110,110,0.59)') should return error`, function () {
+    try {
+      fdutils.rgbToHex('rgb(256,110,110,0.59)')
+    } catch(e) {
+      assert(true);
+    }
+  });
+  it(`fdutils.rgbToHex('rg(195,110,110,0.59)') should return error`, function () {
+    try {
+      fdutils.rgbToHex('rg(195,110,110,0.59)')
+    } catch(e) {
+      assert(true);
+    }
   });
 });

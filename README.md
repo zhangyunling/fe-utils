@@ -1,5 +1,5 @@
 
-前端基础工具库（最新版本：1.0.1）
+前端基础工具库（最新版本：1.0.2）
 
 > 目的：节省时间，高效完成工作；
 
@@ -17,7 +17,7 @@
 
 ### npm:
 ``` bash
-$ npm i fdutils -d
+$ npm i fdutils -D
 ```
 
 ## 支持的API
@@ -27,7 +27,7 @@ $ npm i fdutils -d
 - `isBoolean`: (v:`1.0.0`) 判断是否为布尔值类型
 - `isDate`: (v:`1.0.0`) 判断是否为Date类型
 - `isError`: (v:`1.0.0`) 判断是否为Error对象
-- `isFunction`: (v:`1.0.0`) 判断是否为数字类型
+- `isFunction`: (v:`1.0.0`) 判断是否为函数
 - `isLeapYear`: (v:`1.0.0`) 判断是否为闰年
 - `isNumber`: (v:`1.0.0`) 判断是否为数字类型
 - `isObject`: (v:`1.0.0`) 判断是否为对象类型
