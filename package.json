@@ -1,6 +1,6 @@
 {
   "name": "fdutils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "前端基础工具库",
   "author": "zhangyunling",
   "main": "dist/fdutils.min.js",

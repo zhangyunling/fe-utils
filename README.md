@@ -1,5 +1,5 @@
 
-前端基础工具库（最新版本：1.0.2）
+前端基础工具库（最新版本：1.0.3）
 
 > 目的：节省时间，高效完成工作；
 
@@ -17,13 +17,11 @@
 
 2. npm 包
 
-### npm:
 ``` bash
-$ npm i fdutils -D
+$ npm i fdutils
 ```
 
 ## 支持的API
-
 
 - [isArray](./docs/isArray.md): (v:`1.0.0`) 判断是否为数组类型
 - [isBoolean](./docs/isBoolean.md): (v:`1.0.0`) 判断是否为布尔值类型

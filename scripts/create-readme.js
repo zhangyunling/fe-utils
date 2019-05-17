@@ -22,13 +22,11 @@ ${pkg.description}（最新版本：${pkg.version}）
 
 2. npm 包
 
-### npm:
 \`\`\` bash
-$ npm i fdutils -D
+$ npm i fdutils
 \`\`\`
 
 ## 支持的API
-
 
 `;
 
