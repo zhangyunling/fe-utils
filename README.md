@@ -41,13 +41,13 @@ $ npm i fdutils -D
 - [debounce](./docs/debounce.md): (v:`1.0.0`) 函数防抖，只触发最后一次调用；
 - [throttle](./docs/throttle.md): (v:`1.0.0`) 函数节流，一定时间内，只执行一次回调函数
 - [numberFormat](./docs/numberFormat.md): (v:`1.0.0`) 把数字字符串进行分割，支持字符串类型的数字
-- `deepClone`: (v:`1.0.0`) 深copy，如果不是对象，则直接返回
-- `objectToString`: (v:`1.0.0`) 把规定格式的Object转换为String格式
-- `xssDecode`: (v:`1.0.0`) 进行XSS编码
-- `xssEncode`: (v:`1.0.0`) 进行XSS编码
-- `stringToObject`: (v:`1.0.0`) 把规定格式的Str转换为Object格式
-- `dateFormat`: (v:`1.0.0`) 转换为指定格式的时间
-- `dateNature`: (v:`1.0.0`) 根据传入的日期，转换出一些指定的节日信息
-- `preciseCountDownTimer`: (v:`1.0.0`) 倒计时的插件
+- [deepClone](./docs/deepClone.md): (v:`1.0.0`) 深copy，如果不是对象，则直接返回
+- [objectToString](./docs/objectToString.md): (v:`1.0.0`) 把规定格式的Object转换为String格式
+- [xssDecode](./docs/xssDecode.md): (v:`1.0.0`) 进行XSS解码，与xssEncode配合使用
+- [xssEncode](./docs/xssEncode.md): (v:`1.0.0`) 进行XSS编码，与xssDecode配合使用
+- [stringToObject](./docs/stringToObject.md): (v:`1.0.0`) 把规定格式的Str转换为Object格式
+- [dateFormat](./docs/dateFormat.md): (v:`1.0.0`) 转换为指定格式的时间
+- [dateNature](./docs/dateNature.md): (v:`1.0.0`) 根据传入的日期，转换出一些指定的节日信息
+- [preciseCountDownTimer](./docs/preciseCountDownTimer.md): (v:`1.0.0`) 倒计时的插件
 
 
