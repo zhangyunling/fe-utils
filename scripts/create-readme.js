@@ -26,6 +26,27 @@ ${pkg.description}（最新版本：${pkg.version}）
 $ npm i fdutils
 \`\`\`
 
+## 新增错误处理（1.0.4版本）
+> 在使用过程中，也许你会碰到一些兼容问题，所以这里统一处理了错误上报；
+
+但是，需要使用者，自己做一些工作，自定义上报的函数；
+
+\`\`\` bash
+/**
+ * data.name ，异常的方法
+ * data.message，异常的信息；
+ */
+fdutils.error = function (data) {
+	let url = \`//host.com/report?key1=error&name=\$\{data.name}&message=\$\{data.message}\`;
+	let img = new Image();
+	img.src = url;
+}
+\`\`\`
+
+类似于上面的这种设置，万一在使用过程中，出现异常，因为这里的上报，可以让你迅速的排查解决问题；
+而且，该错误上报，是一个全局的上报，所以你新增的一些方法，也无需专门调用该错误上报；
+让你放心使用；
+
 ## 支持的API
 
 `;

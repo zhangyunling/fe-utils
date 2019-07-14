@@ -10,7 +10,25 @@ r.keys().forEach(key => {
 
   // '_'开头的认为是私有函数或者方法；
   if (attr.indexOf('_') !== 0) {
-  	moduleExports[attr] = r(key);
+  	let cb = r(key);
+
+  	moduleExports[attr] = function (...args) {
+  		let result = '';
+  		
+  		try {
+  			result = cb.apply(this, args);
+  		} catch (e) {
+  			if (typeof this.error === 'function') {
+  				this.error({
+  					name: attr,
+  					message: e.message
+  				});
+  			}
+  			throw new Error(e.message);
+  		}
+
+  		return result;
+  	}
   }
 });
 

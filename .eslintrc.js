@@ -1,3 +1,12 @@
+const isPro = process.argv.join('').indexOf('prod.conf') !== -1;
+let consoleRule = 0;
+
+// 线上打包时，修改一些默认的设置；
+if (isPro) {
+  consoleRule = 2;
+  console.info('\n打包线上，eslint限制有修改；');
+}
+
 module.exports = {
   "env": {
     "browser": true,
@@ -24,7 +33,7 @@ module.exports = {
     //禁止在条件表达式中使用赋值语句
     "no-cond-assign": 2,
     //禁止使用console
-    "no-console": 1,
+    "no-console": consoleRule,
     //禁止修改const声明的变量
     "no-const-assign": 2,
     //禁止在条件中使用常量表达式 if(true) if(1)
