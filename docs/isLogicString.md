@@ -36,4 +36,4 @@ fdutils.isLogicString('a && b && (c && d || e) &&')
 
 ### 4、单元测试
 
-单元测试：[isString](http://www.zhangyunling.com/study/fdutils/#isString)
+单元测试：[isLogicString](http://www.zhangyunling.com/study/fdutils/#isLogicString)
