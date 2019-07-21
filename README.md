@@ -1,5 +1,5 @@
 
-前端基础工具库（最新版本：1.0.4）
+前端基础工具库（最新版本：1.0.5）
 
 > 目的：节省时间，高效完成工作；
 
@@ -50,6 +50,7 @@ fdutils.error = function (data) {
 - [isError](./docs/isError.md): (v:`1.0.0`) 判断是否为Error对象
 - [isFunction](./docs/isFunction.md): (v:`1.0.0`) 判断是否为函数
 - [isLeapYear](./docs/isLeapYear.md): (v:`1.0.0`) 判断是否为闰年
+- [isLogicString](./docs/isLogicString.md): (v:`1.0.5`) 判断字符串是否为一个合法的逻辑表达式
 - [isNumber](./docs/isNumber.md): (v:`1.0.0`) 判断是否为数字类型
 - [isObject](./docs/isObject.md): (v:`1.0.0`) 判断是否为对象类型
 - [isRegExp](./docs/isRegExp.md): (v:`1.0.0`) 判断是否为正则类型
