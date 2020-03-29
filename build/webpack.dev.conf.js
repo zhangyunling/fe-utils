@@ -1,70 +1,41 @@
 'use strict'
+const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const pkg = require('../package.json');
+const merge = require('webpack-merge');
+const baseWebpackConfig = require('./webpack.base.conf.js');
 
-const devWebpackConfig = {
+const devWebpackConfig = merge(baseWebpackConfig, {
   mode: 'development',
-  entry: {
-    [pkg.name]: './src/index.js',
-  },
   output: {
-    path: path.join(__dirname, '..', 'test'),
-    filename: '[name].js',
-    library: ['[name]'],
+    path: path.join(__dirname, '../dist'),
   },
   devServer: {
-    contentBase: path.join(__dirname, '..'),
+    contentBase: [
+      path.join(__dirname, '../test/'), 
+      path.join(__dirname, '../')
+    ],
     clientLogLevel: 'warning',
     historyApiFallback: true,
+    inline: true,
     hot: true,
     compress: true,
-    host: 'localhost',
-    port: 8080,
+    host: '0.0.0.0',
+    port: 8088,
     open: false,
-    overlay: { warnings: false, errors: true },
-    publicPath: '/',
-    proxy: {},
-    index: 'test/asserts/index.html',
-    watchOptions: {
-      poll: false,
+    overlay: { 
+      warnings: false, 
+      errors: true 
     },
-    staticOptions: {
-      redirect: true
-    }
-  },
-  optimization: {
-    minimize: true,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: "eslint-loader",
-        include: [path.join(__dirname, '..', 'src')],
-        enforce: "pre",
-        options: {
-          emitError: true
-        }
-      },
-      {
-        test: /\.js$/,
-        loader: "babel-loader",
-        exclude: /node_modules/
-      }
-    ]
+    publicPath: '/'
   },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': "development"
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      filename: 'test/asserts/index.html',
-      template: 'test/asserts/index.html',
-    }),
   ]
-};
+});
 
 module.exports = devWebpackConfig;
