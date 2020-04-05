@@ -4,7 +4,7 @@
  * @desc 判断是否为闰年
  * @param {Number} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isLeapYear(value);
+ * @example feutils.isLeapYear(value);
  */
 
 function _isLeapYear(year) {

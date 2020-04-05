@@ -9,9 +9,9 @@
 
 1. 直接引入；
 
-直接下载：[fdutils.min.js](https://github.com/zhangyunling/fdutils/blob/master/dist/fdutils.min.js)
+直接下载：[fe-utils.min.js](https://github.com/zhangyunling/fdutils/blob/master/dist/fdutils.min.js)
 
-单元测试：[fdutils](http://www.zhangyunling.com/study/fdutils/)
+单元测试：[fe-utils](http://www.zhangyunling.com/study/fdutils/)
 
 直接使用`script`引入，引入之后，就可以按照项目中的模块加载机制，进行加载（未使用模块加载机制则直接使用全局变量：`fdutils`）；
 

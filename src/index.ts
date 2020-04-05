@@ -4,29 +4,6 @@
  */
 
 // version的信息，不可变
-import { version, versionCode } from './.cache/version';
-import {
-  isString,
-  isArray,
-  isBoolean,
-  isDate,
-  isError,
-  isFunction,
-  isNumber,
-  isObject,
-  isRegExp
-} from './boolean/type';
-
-export {
-  version,
-  versionCode,
-  isString,
-  isArray,
-  isBoolean,
-  isDate,
-  isError,
-  isFunction,
-  isNumber,
-  isObject,
-  isRegExp
-};
+export * from './.cache/version';
+export * from './boolean/type';
+export * from './boolean/isLogicString';

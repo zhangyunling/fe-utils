@@ -65,7 +65,7 @@
   </script>
   <script src="/test/asserts/chai.js"></script>
   <script src="/test/asserts/mocha.js"></script>
-  <script src = "/fdutils.js"></script>
+  <script src = "/fe-utils.js"></script>
   <script class="mocha-init">
     mocha.setup('bdd');
     mocha.setup({globals: ['QttPerformance']});
@@ -117,7 +117,7 @@
         var i;
         var html = "";
         var hash = location.hash.replace("#","");
-        var utils = window.fdutils || {};
+        var utils = window.feutils || {};
 
         Object.keys(utils).forEach(function(name){
           // 只增加函数

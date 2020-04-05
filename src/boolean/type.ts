@@ -34,7 +34,7 @@ function checkType (obj: any): string {
  * @desc 判断是否为字符串类型
  * @param {any} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isString(value);
+ * @example feutils.isString(value);
  */
 export function isString (value: any): boolean {
   return checkType(value) === 'string';
@@ -46,7 +46,7 @@ export function isString (value: any): boolean {
  * @desc 判断是否为数组类型
  * @param {any} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isArray(value);
+ * @example feutils.isArray(value);
  */
 export function isArray (value: any): boolean {
   return checkType(value) === 'array';
@@ -58,7 +58,7 @@ export function isArray (value: any): boolean {
  * @desc 判断是否为布尔值类型
  * @param {any} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isBoolean(value);
+ * @example feutils.isBoolean(value);
  */
 export function isBoolean (value: any): boolean {
   return checkType(value) === 'boolean';
@@ -70,7 +70,7 @@ export function isBoolean (value: any): boolean {
  * @desc 判断是否为Date类型
  * @param {Object} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isDate(value);
+ * @example feutils.isDate(value);
  */
 export function isDate (value: any): boolean {
   return checkType(value) === 'date';
@@ -82,7 +82,7 @@ export function isDate (value: any): boolean {
  * @desc 判断是否为Error对象
  * @param {Error} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isError(value);
+ * @example feutils.isError(value);
  */
 export function isError (value: any): boolean {
   return checkType(value) === 'error';
@@ -94,7 +94,7 @@ export function isError (value: any): boolean {
  * @desc 判断是否为函数
  * @param {Function} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isFunction(value);
+ * @example feutils.isFunction(value);
  */
 export function isFunction (value: any): boolean {
   return checkType(value) === 'function';
@@ -106,7 +106,7 @@ export function isFunction (value: any): boolean {
  * @desc 判断是否为数字类型
  * @param {Number} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isNumber(value);
+ * @example feutils.isNumber(value);
  */
 export function isNumber (value: any): boolean {
   return checkType(value) === 'number';
@@ -118,7 +118,7 @@ export function isNumber (value: any): boolean {
  * @desc 判断是否为对象类型
  * @param {Object} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isObject(value);
+ * @example feutils.isObject(value);
  */
 export function isObject (value: any): boolean {
   return checkType(value) === 'object';
@@ -130,7 +130,7 @@ export function isObject (value: any): boolean {
  * @desc 判断是否为正则类型
  * @param {RegExp} value 待检测的值
  * @return {Boolean} Boolean 值；
- * @example fdutils.isRegExp(value);
+ * @example feutils.isRegExp(value);
  */
 export function isRegExp (value: any): boolean {
   return checkType(value) === 'regexp';
