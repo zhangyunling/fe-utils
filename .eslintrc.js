@@ -49,6 +49,7 @@ module.exports = {
 
         // allow async-await
         'generator-star-spacing': 'off', // 关闭
+        'quote-props': 'off',
         // 最大长度 120
         'max-len': [
             'warn',

@@ -118,12 +118,17 @@
         var html = "";
         var hash = location.hash.replace("#","");
         var utils = window.feutils || {};
+        var keyArr = [];
 
         Object.keys(utils).forEach(function(name){
-          // 只增加函数
+          // 只增加函数名，后面排序后再输出到测试页面
           if (name !== 'default' && (typeof utils[name] === 'function')) {
-            html += '<li><a href = "#'+name+'">'+name+'</a></li>';
+            keyArr.push(name);
           }
+        });
+        // 排序后，输出
+        keyArr.sort().forEach(function(name){
+          html += `<li><a href = "#${name}">${name}</a></li>`;
         });
 
         this.list.innerHTML = html;
