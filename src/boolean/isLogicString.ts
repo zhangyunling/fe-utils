@@ -16,12 +16,12 @@ export function isLogicString (value: any): boolean {
     return false;
   }
 
-  const arr = [];
-  const sLen = value.length;
-  let i = 0;
-  let v = '';
-  let logicStr = ''; // 不带括号的逻辑表达式
-  let v3 = '';
+  const arr: Array<string> = [];
+  const sLen: number = value.length;
+  let i: number = 0;
+  let v: string = '';
+  let logicStr: string = ''; // 不带括号的逻辑表达式
+  let v3: string = '';
 
   while (i < sLen) {
     v = value[i];

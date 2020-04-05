@@ -13,21 +13,9 @@ export interface DefaultStringTypes {
   [propName: string]: string;
 }
 
-// 版本号定义
-export interface LibVersionTypes {
-  readonly version: string; // 字符串版本号
-  readonly versionCode: number; // 数字版本号
-}
-
-// trace 上报的types类型
-export interface TraceOptionsTypes {
-  trace_type: string;      // trace type
-  op1: string;             // trace op1
-  [propName: string]: any; // 其他的自定义属性
-}
-
-// 版本号定义
-export interface LibVersionTypes {
-  readonly version: string; // 字符串版本号
-  readonly versionCode: number; // 数字版本号
+// numberFormat
+export interface NumberFormatTypes {
+  number: number | string;  // 待拆分的数字
+  length?: number; // 拆分的长度
+  sep?: string;    // 拆分使用的间隔符；
 }
