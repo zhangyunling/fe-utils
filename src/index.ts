@@ -19,6 +19,7 @@ export * from './color/rgbToHex';
 
 // 规范相关
 export * from './format/numberFormat';
+export * from './format/dateFormat';
 
 // 转换相关
 export * from './transfor/objToStr';
@@ -26,3 +27,6 @@ export * from './transfor/strToObj';
 
 // 对象相关
 export * from './object/deepClone';
+
+// 安全相关
+export * from './secure/xss';
