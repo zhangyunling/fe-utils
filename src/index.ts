@@ -30,3 +30,7 @@ export * from './object/deepClone';
 
 // 安全相关
 export * from './secure/xss';
+
+// 小工具类
+export * from './module/preciseTimer';
+// export * from './module/dateNature';

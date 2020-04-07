@@ -19,7 +19,8 @@
     "build:ts": "npm run create && tsc",
     "build": "npm run build:prd && npm run build:ts",
     "create": "node scripts/create",
-    "docs": "docsify serve docs"
+    "docs": "docsify serve docs",
+    "eslint": "eslint --fix"
   },
   "husky": {
     "hooks": {

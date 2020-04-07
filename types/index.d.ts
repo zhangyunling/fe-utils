@@ -40,3 +40,50 @@ export interface DateFormatTypes {
   format?: string;     // 转换后的输出格式
   date?: any;          // 待转换的时间
 }
+
+// preciseTimer
+export interface PreciseTimerTypes {
+  // 回调函数
+  callback: (data: TrimSecsTypes) => void;
+  // 目标倒计时时间，时间戳，时间字符串，Date实例
+  distTime: Date | number | string;
+  // 当前时间，时间戳，时间字符串，Date实例
+  curTime: Date | number | string;
+}
+
+// preciseTimer
+export interface PreciseTimerResTypes {
+  // 返回一个对象，只支持一个clear函数
+  clear: Function;
+}
+
+export interface DateFestivalTypes {
+  solar: string;       // 公历节日
+  week: string;        // 周节日
+  lunar: string;       // 农历节日
+}
+
+export interface DateLunarTypes {
+  year: string;        // 农历 年
+  month: string;       // 农历 月
+  day: string;         // 农历 日
+  leap: string;        // 今年闰月是几月
+  isLeap: boolean;     // 农历 月
+}
+
+export interface DateSolarTypes {
+  "year": string;      // "阳历 年
+  "month": string;     // "阳历 月
+  "day": string;       // "阳历 日
+  "week": string;      // "阳历 周
+}
+
+// dateNature
+export interface DateNatureTypes {
+  festival: DateFestivalTypes,
+  lunar: DateLunarTypes,
+  solar: DateSolarTypes,
+  isToday: boolean;      // 是否为当天
+  distanceToday: string; // 距离今天还有几天时间
+  solarTerms: string;    // 节气
+}
