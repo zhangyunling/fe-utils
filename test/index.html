@@ -63,9 +63,9 @@
     var vConsole = new VConsole();
     console.log('Hello world');
   </script>
-  <script src="/test/asserts/chai.js"></script>
-  <script src="/test/asserts/mocha.js"></script>
-  <script src = "/fe-utils.js"></script>
+  <script src="./test/asserts/chai.js"></script>
+  <script src="./test/asserts/mocha.js"></script>
+  <script src = "./fe-utils.js"></script>
   <script class="mocha-init">
     mocha.setup('bdd');
     mocha.setup({globals: ['QttPerformance']});
@@ -159,7 +159,7 @@
         this.script.onload = function(){
           mocha.run();
         };
-        this.script.setAttribute('src', "/test/lib/tests."+id+".js");
+        this.script.setAttribute('src', "./test/lib/tests."+id+".js");
         document.body.appendChild(this.script)
       }
     };
