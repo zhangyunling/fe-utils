@@ -33,4 +33,4 @@ export * from './secure/xss';
 
 // 小工具类
 export * from './module/preciseTimer';
-// export * from './module/dateNature';
+export * from './module/dateNature';

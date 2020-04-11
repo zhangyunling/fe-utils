@@ -57,33 +57,39 @@ export interface PreciseTimerResTypes {
   clear: Function;
 }
 
+export interface DateEasterTypes {
+  m: number;
+  d: number;
+}
+
 export interface DateFestivalTypes {
   solar: string;       // 公历节日
   week: string;        // 周节日
   lunar: string;       // 农历节日
+  estDay?: string;     // 复活节
 }
 
 export interface DateLunarTypes {
-  year: string;        // 农历 年
-  month: string;       // 农历 月
-  day: string;         // 农历 日
-  leap: string;        // 今年闰月是几月
+  year: number;        // 农历 年
+  month: number;       // 农历 月
+  day: number;         // 农历 日
+  leap: number;        // 今年闰月是几月
   isLeap: boolean;     // 农历 月
 }
 
 export interface DateSolarTypes {
-  "year": string;      // "阳历 年
-  "month": string;     // "阳历 月
-  "day": string;       // "阳历 日
-  "week": string;      // "阳历 周
+  "year": number;      // "阳历 年
+  "month": number;     // "阳历 月
+  "day": number;       // "阳历 日
+  "week": number;      // "阳历 周
 }
 
 // dateNature
 export interface DateNatureTypes {
-  festival: DateFestivalTypes,
-  lunar: DateLunarTypes,
-  solar: DateSolarTypes,
-  isToday: boolean;      // 是否为当天
-  distanceToday: string; // 距离今天还有几天时间
-  solarTerms: string;    // 节气
+  festival?: DateFestivalTypes,
+  lunar?: DateLunarTypes,
+  solar?: DateSolarTypes,
+  isToday?: boolean;      // 是否为当天
+  distanceToday?: number; // 距离今天还有几天时间
+  solarTerms?: string;    // 节气
 }
