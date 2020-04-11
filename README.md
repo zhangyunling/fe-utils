@@ -15,4 +15,5 @@ $ npm i @dxbbb/fe-utils
 ## 文档
 
 [详细文档](https://zhangyunling.github.io/fe-utils/docs/#/)
+
 [在线demo](https://zhangyunling.github.io/fe-utils/test/)
