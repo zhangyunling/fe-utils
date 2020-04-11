@@ -30,4 +30,4 @@ _debounce(); // window
 
 ### 2、单元测试
 
-单元测试：[debounce](http://www.zhangyunling.com/study/feutils/#debounce)
+单元测试：[debounce](https://zhangyunling.github.io/fe-utils/test/#debounce)

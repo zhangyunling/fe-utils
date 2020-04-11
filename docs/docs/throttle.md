@@ -30,4 +30,4 @@ _throttle(); // window
 
 ### 2、单元测试
 
-单元测试：[throttle](http://www.zhangyunling.com/study/feutils/#throttle)
+单元测试：[throttle](https://zhangyunling.github.io/fe-utils/test/#throttle)
