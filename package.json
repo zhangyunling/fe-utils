@@ -2,7 +2,7 @@
   "name": "@dxbbb/fe-utils",
   "libName": "feutils",
   "fileName": "fe-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "前端基础工具库",
   "author": "zhangyunling",
   "main": "lib/index.js",
@@ -25,7 +25,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run build:prd && lint-staged"
     }
   },
   "repository": {

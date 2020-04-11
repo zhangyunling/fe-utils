@@ -14,7 +14,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     contentBase: [
       path.join(__dirname, '../test/'), 
-      path.join(__dirname, '../')
+      path.join(__dirname, '../dist/')
     ],
     clientLogLevel: 'warning',
     historyApiFallback: true,
@@ -28,7 +28,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       warnings: false, 
       errors: true 
     },
-    publicPath: '/'
+    publicPath: '/dist/'
   },
   plugins: [
     new webpack.DefinePlugin({

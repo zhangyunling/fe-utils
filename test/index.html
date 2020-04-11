@@ -50,22 +50,22 @@
       text-decoration: none;
     }
   </style>
-  <link rel="stylesheet" href="/test/asserts/mocha.css">
+  <link rel="stylesheet" href="./asserts/mocha.css">
   <body class = "tc">
     <h3 id = "title">浏览器测试</h3>
     <div id="mocha"></div>
     <ul id = "list"></ul>
     <a id = "reload" onclick = "window.location.reload();" href = "javascript:;">刷新</a>
   </body>
-  <script src="/test/asserts/vconsole.min.js"></script>
+  <script src="./asserts/vconsole.min.js"></script>
   <script>
     // init vConsole
     var vConsole = new VConsole();
     console.log('Hello world');
   </script>
-  <script src="./test/asserts/chai.js"></script>
-  <script src="./test/asserts/mocha.js"></script>
-  <script src = "./fe-utils.js"></script>
+  <script src="./asserts/chai.js"></script>
+  <script src="./asserts/mocha.js"></script>
+  <script src = "../dist/fe-utils.js"></script>
   <script class="mocha-init">
     mocha.setup('bdd');
     mocha.setup({globals: ['QttPerformance']});
@@ -159,7 +159,7 @@
         this.script.onload = function(){
           mocha.run();
         };
-        this.script.setAttribute('src', "./test/lib/tests."+id+".js");
+        this.script.setAttribute('src', "./lib/tests."+id+".js");
         document.body.appendChild(this.script)
       }
     };
